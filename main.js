@@ -1,9 +1,3 @@
-import './style.css';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-
-// Setup
-
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -70,6 +64,15 @@ const jeffTexture = new THREE.TextureLoader().load('jeff.png');
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
 scene.add(jeff);
+
+// Avatar2
+
+// const jeff2Texture = new THREE.TextureLoader().load('jeff2.png');
+
+// const jeff2 = new THREE.Mesh(new THREE.CylinderGeometry( 4, 4, 20, 32 ), new THREE.MeshBasicMaterial({ map: jeff2Texture }));
+
+// scene.add(jeff2);
+
 
 // Moon
 
