@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./p5.js"></script>
+    <script src="./p5.sound.min.js"></script>
+    <script src="./p5.Polar.js"></script>
+    <script src="./p5.Polar.min.js"></script>
+    <script src="./p5.PolarExt.js"></script>
+    <script src="p5.riso.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+      <iframe class="logo" style="width:500px; height:500px" src="https://editor.p5js.org/Leahyuu/full/v5xlaEKWh"></iframe> 
+      <img class="background" src="blueprint.png" style="width:500px; height:500px" alt="blueprint picture">
+      <!-- <img class="background" src="bkgd.png"> -->
+      <h1>Welcome to the page</h1>
+    </main>
+    <script>
+      // small to large
+      // gsap.from('.logo', {duration:1, opacity:0, scale:.5})
+      // gsap.from('.background', {duration:2, opacity:0, scale:2, delay:1})
+      // gsap.from('h1', {duration:2, opacity:0, scale:2, delay:2})
+      // large to small - start from 2* size back to original size
+      // gsap.from('.logo', {duration:2, opacity:0, scale:2})
+
+      var timeline = gsap.timeline();
+      timeline.from('.logo', {duration:1, opacity:0, scale:.5})
+      timeline.from('.background', {duration:2, opacity:0, scale:2})
+      timeline.from('h1', {duration:2, opacity:0, scale:2})
+    </script>
+    <script src="sketch.js"></script>
+    <script src="sketch2.js"></script>
+  </body>
+</html>
